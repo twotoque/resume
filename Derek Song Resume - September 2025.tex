@@ -1,0 +1,233 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\LARGE \scshape Derek Song} \\ \vspace{1pt}
+    \small 647-686-3810 $|$ \href{mailto:dereksong28@gmail.com} {\underline{dereksong28@gmail.com}} $|$ \href{https://twotoque.com/}{\underline{twotoque.com}} $|$
+    \href{https://www.linkedin.com/in/dereksong/}{\underline{linkedin.com/in/dereksong}} $|$
+    \href{https://github.com/twotoque}{\underline{github.com/twotoque}}
+
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {UI/UX Designer, Laurier Start-Up Lab}{September 2025 - Present}
+      {Lazaridis School of Business \& Economics at Wilfrid Laurier University}{Waterloo, ON}
+      \resumeItemListStart
+        \resumeItem{Incoming Fall 2025 co-op position, will collaborate with startup founders to research user needs and design intuitive product flows, wireframes, and prototypes using Figma}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Graphics Administrative Assistant, Toronto City Council}{ April 2024 - Present}
+      {City of Toronto}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Conducted interviews with 15+ residents, surveyed 55+ individuals, and analyzed bike usage data using Python, Pandas, Plotly, Dash, and JSON for City Councillor Jamaal Myers}
+        \resumeItem{Optimized data retrieval through caching and efficient API usage to support scalable performance in an interactive event and dataset map built with React, TypeScript, Flask, Firebase, and the Toronto Open Data API}
+        \resumeItem{Designed 130+ event and policy graphics with Illustrator, Photoshop, and InDesign, and captured 1,200+ photos using DSLR and Lightroom; materials reached 30,000+ households and increased community engagement by 20\%}
+        \resumeItem{Assisted in planning, brand development, and marketing major community events, including a 1,000+ attendee community barbecue, park consultation with 450+ residents, and holiday market with 200+ guests \& 15+ sponsors}
+      \resumeItemListEnd
+
+          \resumeSubheading
+      {Software Developer and Data Analyst}{ April 2025 - September 2025}
+      {Our Greenway Conservancy}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Deployed an interactive park route finder to determine shortest-path navigation with Dijkstra’s algorithm, using React, Turf.js, TypeScript, and PostgreSQL, with geospatial data processed in QGIS}
+        \resumeItem{Automated web-to-LaTeX pipeline in Python using BeautifulSoup to scrape and generate structured documents reducing report preparation time by 80\% and ensuring consistent formatting across 20+ documents}
+        \resumeItem{Led a brand refresh and a heuristic evaluation utilizing Nielsen's principles to meet WCAG standards, resolving 16+ critical pain points identified through stakeholder feedback and accessibility testing}
+
+        \resumeItem{Developed a reusable HTML/CSS component kit website with documentation to streamline web development}
+      \resumeItemListEnd
+
+    
+    \resumeSubheading
+      {Community Planner}{November 2021 - August 2023}
+      {TTCriders}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Analyzed UX data from rider interviews and focus groups to research and design TTCriders’ Wheel-Trans and suburban transportation report using Adobe InDesign, visualized on websites built with Next.js and JavaScript }
+        \resumeItem{Made short-form videos using Adobe After Effects and Premiere Pro, several surpassing 6,000+ views, 200+ engagements, and growing web traffic by 15\%}
+    \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Toronto Census Visualizer} $|$ \emph{Python, Pandas, Plotly, Dash, JSON}}{July - October 2024}
+          \resumeItemListStart
+            \resumeItem{Created an interactive data dashboard with Plotly and Dash to render 2021 Census data across Toronto’s 158 neighbourhoods, using Pandas to process GeoJSON and JSON data}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Atomic Search and Decay Calculator} $|$ \emph{JavaScript, HTML, CSS}}{May 2022 - February 2024}
+          \resumeItemListStart
+            \resumeItem{Developed for GryphHacks 2022, refactored and debugged code in 2024 using modern best practices; published on the Chrome Web Store with 25+ daily users and a 5-star rating}
+          \resumeItemListEnd
+        
+      % \resumeProjectHeading
+          %{\textbf{Laurier STEM Publishing Society Website} $|$ \emph{WordPress, Cloudflare}}{October 2024}
+          %\resumeItemListStart
+           % \resumeItem{Configured domain, DNS records, and backend infrastructure for a self-hosted WordPress site; optimized performance to handle 41,500+ requests and 2,250+ monthly visitors }
+       %   \resumeItemListEnd
+        
+      \resumeProjectHeading
+          {\textbf{TransitBloom } $|$ \emph{Figma, Adobe Illustrator}}{December 2024}
+          \resumeItemListStart
+            \resumeItem{Co-led wireframe design and research in a sustainable and accessible transportation app using Figma}
+            \resumeItem{Presented a business case to judges, highlighting market potential; won 2nd place in UX Laurier competition}
+          \resumeItemListEnd
+      %\resumeProjectHeading
+       %   {\textbf{YUlearn} $|$ \emph{React, TypeScript, PostgreSQL, Next.js, Python, Plotly}}{March 2025}
+        %  \resumeItemListStart
+         %   \resumeItem{Collaborated with a team of 6 at the York University Lassonde BEST Startup Hackathon to develop a full-stack app to easily explain computer science topics to students, achieved 3rd place}
+          %  \resumeItem{Designed UI mockups, performed object-oriented analysis, and developed front-end with React, forecasted future enrollment and market demand using a linear regression model in Python and Plotly}
+         % \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Wilfrid Laurier University }{Waterloo, ON}
+      {Bachelor of Science in Computer Science (Co-op Option), Minor in UX Design}{September 2023 - Present}
+       % \small{\item{{Relevant topics: Data Structures, Databases, Discrete Mathematics, Agile Design, Linear Algebra, Tree/Graph Theory}}}
+  \resumeSubHeadingListEnd
+% f
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages, Tools, and Frameworks}{: Python (Pandas, Plotly, Dash, Flask), Java, JavaScript, TypeScript, React, C, R, ARM Assembly, HTML, CSS, JSON, WordPress, Docker, DNS, GitHub, Git, QGIS, Firebase, SQL, Visual Basic\\
+     \textbf{Design Tools}{: Adobe Photoshop, Illustrator, Lightroom, After Effects, Premiere Pro, Acrobat Pro, InDesign, Figma}
+    }}}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
